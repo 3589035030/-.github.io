@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=yes"/>
+<head>
+    <title>祝老爸新年快乐--作者：林子奇</title>
+</head>
+<style type="text/css">/*开始代码*/
+body {
+    /* 背景颜色*/
+    background-color: #c6070c;
+    /* 字体颜色 */
+    color: #ffe700;
+    /* 文字居中 */
+    text-align: center;
+}
+table {
+    padding-top: 200px;
+    /* 居中 */
+    margin: auto;
+    /* 宽比例 */
+    width: 20%;
+}
+.pinyin {
+    height: 20px;
+    /* 字母间距 */
+    letter-spacing: 2.0px;
+    font-weight: 200;
+}
+td {
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.25px;/*标题间距*/
+}
+h2 {
+    margin-top: 2.0px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    word-spacing: 0.20px;
+}
+p {
+    font-weight: 100;
+    letter-spacing:1.0px;
+    word-spacing:1.0px;
+}
+button {
+    background-color: #ffe700;
+    color: #222222;
+    width: 200px;
+    position: relative;
+    border-radius: 2.0px;
+    margin: 0.20;
+    padding: 0.20;
+    line-height: 0.20;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+button:hover,
+button:focus {
+    background-color: #ffe700;
+}
+button:active {
+    transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+}
+</style>
+<body>
+<table>
+    <tr>
+        <td id="jeskson1">新</td>
+        <td id="jeskson2">年</td>
+        <td id="jeskson3">快</td>
+        <td id="jeskson4">乐</td>
+    </tr>
+</table>
+<h2 id="dadaEnglish">(版权所有)</h2>
+<button type="button" id="button">
+    <p>下一条</p>
+</button>
+<script type="text/javascript">
+var jeskson1 = document.getElementById("jeskson1");
+var jeskson2 = document.getElementById("jeskson2");
+var jeskson3 = document.getElementById("jeskson3");
+var jeskson4 = document.getElementById("jeskson4");
+var dadaEnglish = document.getElementById("dadaEnglish");
+var button = document.getElementById("button");
+var random = Math.random();
+var dadasC1 = [
+    "新",
+    "恭",
+    "大",
+    "万",
+    "年",
+    "身",
+    "心",
+    "恭",
+];
+var dadasC2 = [
+    "年",
+    "喜",
+    "吉",
+    "事",
+    "年",
+    "体",
+    "想",
+    "贺"
+];
+var dadasC3 = [
+    "快",
+    "发",
+    "大",
+    "如",
+    "有",
+    "健",
+    "事",
+    "新"
+];
+var dadasC4 = [
+    "乐",
+    "财",
+    "利",
+    "意",
+    "余",
+    "康",
+    "成",
+    "春"
+];
+var dadasE = [
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)",
+    "(林子奇祝老爸兔年快乐)"
+];
+jeskson1.textContent = dadasC1[Math.floor(random * dadasC1.length)];
+jeskson2.textContent = dadasC2[Math.floor(random * dadasC2.length)];
+jeskson3.textContent = dadasC3[Math.floor(random * dadasC3.length)];
+jeskson4.textContent = dadasC4[Math.floor(random * dadasC4.length)];
+dadaEnglish.textContent = dadasE[Math.floor(random * dadasE.length)];
+var onClick = function() {
+    var random = Math.random();
+    jeskson1.textContent = dadasC1[Math.floor(random * dadasC1.length)];
+    jeskson2.textContent = dadasC2[Math.floor(random * dadasC2.length)];
+    jeskson3.textContent = dadasC3[Math.floor(random * dadasC3.length)];
+    jeskson4.textContent = dadasC4[Math.floor(random * dadasC4.length)];
+    dadaEnglish.textContent = dadasE[Math.floor(random * dadasE.length)];
+}
+ 
+button.addEventListener("click", onClick);
+/*结束码*/
+</script>
+</body>
+</html>
